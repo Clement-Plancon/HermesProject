@@ -1,0 +1,32 @@
+/************************** FONTS **************************/
+@font-face {
+  font-family: "font-1";
+  src: url(/assets/font/orator.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(/assets/font/courier.ttf);
+}
+
+/************************** VARIABLES **************************/
+/************************** ALL **************************/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+  width: 510px;
+  min-height: 921px;
+  background-color: red;
+  min-height: auto;
+}
+
+nav .menu-nav {
+  font-family: 'font-1' Arial, Helvetica, sans-serif;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

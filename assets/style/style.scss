@@ -1,0 +1,38 @@
+/************************** FONTS **************************/
+
+@font-face {
+    font-family: "font-1";
+    src: url(/assets/font/orator.ttf);
+}
+
+@font-face {
+    font-family: "font-2";
+    src: url(/assets/font/courier.ttf);
+}
+
+
+/************************** VARIABLES **************************/
+
+$color-primary: #F6F1EB;
+$color-secondary: #444444;
+$color-third: #FFFFFF;
+
+/************************** ALL **************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    width: 510px;
+    min-height: 921px;
+    background-color: red;
+    min-height: auto;
+    .menu-nav {
+        font-family: 'font-1' Arial, Helvetica, sans-serif;
+        display: none;
+    }
+}
