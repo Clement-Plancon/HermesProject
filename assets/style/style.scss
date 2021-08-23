@@ -22,17 +22,27 @@ $color-third: #FFFFFF;
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
     text-decoration: none;
 }
 
 nav {
-    position: absolute;
-    width: 510px;
-    min-height: 921px;
-    background-color: red;
-    min-height: auto;
     .menu-nav {
+        position: absolute;
+        width: 510px;
+        min-height: 921px;
+        background-color: $color-third;
+        min-height: auto;
         font-family: 'font-1' Arial, Helvetica, sans-serif;
-        display: none;
+        text-transform: uppercase;
+        margin-top: 65px;
+        margin-left: 100px;
+        /* transform: translateX(-100%); */
+        border-right: 1px solid black;
+        transition: 0.5;
+        &:hover {
+            display: block;
+            transform: translateX(0%);
+        }
     }
 }

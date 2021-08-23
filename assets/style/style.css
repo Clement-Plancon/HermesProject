@@ -14,19 +14,29 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
   text-decoration: none;
 }
 
-nav {
+nav .menu-nav {
   position: absolute;
   width: 510px;
   min-height: 921px;
-  background-color: red;
+  background-color: #FFFFFF;
   min-height: auto;
+  font-family: 'font-1' Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-top: 65px;
+  margin-left: 100px;
+  /* transform: translateX(-100%); */
+  border-right: 1px solid black;
+  -webkit-transition: 0.5;
+  transition: 0.5;
 }
 
-nav .menu-nav {
-  font-family: 'font-1' Arial, Helvetica, sans-serif;
-  display: none;
+nav .menu-nav:hover {
+  display: block;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 /*# sourceMappingURL=style.css.map */
