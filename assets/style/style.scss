@@ -16,6 +16,12 @@
 $color-primary: #F6F1EB;
 $color-secondary: #444444;
 $color-third: #FFFFFF;
+$font-txt-medium:0.8rem;
+$font-txt-little:0.5rem;
+@mixin font {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 
 /************************** ALL **************************/
 
@@ -26,7 +32,12 @@ $color-third: #FFFFFF;
     text-decoration: none;
 }
 
+body {
+    background: $color-primary;
+}
+
 nav {
+    display: none;
     .menu-nav {
         position: absolute;
         width: 510px;
@@ -43,6 +54,51 @@ nav {
         &:hover {
             display: block;
             transform: translateX(0%);
+        }
+    }
+}
+
+.navTop {
+    width: 100%;
+    height: 100px;
+    background: $color-primary;
+    &__top {
+        height: 30px;
+        font-size: $font-txt-little;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: flex-end;
+        @include font;
+        padding-right: 20px;
+        a {
+            color: $color-secondary;
+            margin-right: 5px;
+        }
+    }
+    &__bottom {
+        height: 70px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font;
+        font-size: $font-txt-medium;
+        h3 {
+            position: absolute;
+            left: 150px;
+        }
+        svg {
+            width: 20px;
+            position: absolute;
+            left: 120px;
+        }
+        &:nth-child() {
+            background: transparent;
+            border: transparent;
+            position: absolute;
+            right: 20px;
         }
     }
 }
