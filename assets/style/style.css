@@ -20,6 +20,7 @@
 
 body {
   background: #F6F1EB;
+  margin: 5px 70px 0px 70px;
 }
 
 nav {
@@ -52,6 +53,8 @@ nav .menu-nav:hover {
   width: 100%;
   height: 100px;
   background: #F6F1EB;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .navTop__top {
@@ -73,9 +76,23 @@ nav .menu-nav:hover {
   padding-right: 20px;
 }
 
+.navTop__top h3:nth-child(1) {
+  position: absolute;
+  right: 240px;
+}
+
+.navTop__top h3:nth-child(2) {
+  position: absolute;
+  right: 122px;
+}
+
+.navTop__top h3:nth-child(3) {
+  position: absolute;
+  right: 20px;
+}
+
 .navTop__top a {
   color: #444444;
-  margin-right: 5px;
 }
 
 .navTop__bottom {
@@ -95,21 +112,40 @@ nav .menu-nav:hover {
   font-size: 0.8rem;
 }
 
+.navTop__bottom-searchbar {
+  width: 137px;
+  height: 40px;
+  background: #FFFFFF;
+  position: absolute;
+  left: 140px;
+}
+
+.navTop__bottom img {
+  width: 8%;
+}
+
 .navTop__bottom h3 {
   position: absolute;
-  left: 150px;
+  left: 30px;
 }
 
 .navTop__bottom svg {
   width: 20px;
   position: absolute;
-  left: 120px;
+  left: 0;
 }
 
-.navTop__bottom:nth-child() {
+.navTop__bottom button {
   background: transparent;
   border: transparent;
   position: absolute;
+}
+
+.navTop__bottom button:nth-child(5) {
+  right: 120px;
+}
+
+.navTop__bottom button:nth-child(6) {
   right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
